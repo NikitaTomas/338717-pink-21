@@ -11,21 +11,21 @@
           <a class="main-header__logo" href="#" title="логотип">
             PINK
           </a>
-          <button class="main-header__toggle" type="button">opening-closing</button>
+          <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
         <nav class="main-header__navigation">
           <div class="main-header__navigation__wrapper">
             <ul class="main-header__list">
               <li class="main-header__item">
-                <a href="index.html">главная</a>
+                <a class="main-header__link" href="index.html">главная</a>
               </li>
               <li class="main-header__item">
-                <a href="catalog.html">Фотографии</a>
+                <a class="main-header__link" href="catalog.html">Фотографии</a>
               </li>
               <li class="main-header__item">
-                <a href="#">конкурс</a>
+                <a class="main-header__link" href="#">конкурс</a>
               </li>
               <li class="main-header__item">
-                <a href="#">html academy</a>
+                <a class="main-header__link" href="#">html academy</a>
               </li>
             </ul>
           </div>
@@ -39,21 +39,21 @@
       <section class="motivation">
         <div class="motivation__wrapper">
           <h2 class="motivation__title">Взгляните на жизнь иначе!</h2>
-          <div class="motivation-download">
+          <div class="motivation__download">
             <a href="https://www.apple.com/ru/shop">Скачать приложение</a>
-            <ul class="motivation-download__list">
-              <li class="motivation-download__item">
-                <a href="https://www.apple.com/ru/shop" title="iOS">
+            <ul class="motivation__list">
+              <li class="motivation__item">
+                <a class="motivation__link" href="https://www.apple.com/ru/shop" title="iOS">
                   <img src="https://via.placeholder.com/150x150" alt="iOS-shop">
                 </a>
               </li>
-              <li class="motivation-download__item">
-                <a href="https://play.google.com/store?hl=ru&gl=US" title="android">
+              <li class="motivation__item">
+                <a class="motivation__link" href="https://play.google.com/store?hl=ru&gl=US" title="android">
                   <img src="https://via.placeholder.com/150x150" alt="android-shop">
                 </a>
               </li>
-              <li class="motivation-download__item">
-                <a href="https://www.microsoft.com/ru-ru/store/apps/windows" title="windows">
+              <li class="motivation__item">
+                <a class="motivation__link" href="https://www.microsoft.com/ru-ru/store/apps/windows" title="windows">
                   <img src="https://via.placeholder.com/150x150" alt="windows-shop">
                 </a>
               </li>
@@ -66,18 +66,19 @@
       <section class="advantages">
         <h2 class="visually-hidden">предложения</h2>
         <div class="advantages__wrapper">
-          <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+          <p class="advantages__excerpt">Устали от серости мегаполиса?</p>
+          <p class="advantages__excerpt">Нам есть, что вам предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3 class="advantages__title-h3">Поднимает настроение</h3>
+              <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__excerpt">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title-h3">Меняет мир вокруг</h3>
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__excerpt">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title-h3">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__excerpt"> Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
             </li>
           </ul>
@@ -156,21 +157,21 @@
         </div>
       </section>
 
-      <section class="Feedback">
+      <section class="feedback">
         <h2 class="visually-hidden">обратная связь</h2>
-        <div class="Feedback__wrapper">
-          <h3 class="Feedback__title">Остались вопросы? Свяжитесь с нами!</h3>
-          <ul class="Feedback__list">
-            <li class="Feedback__item">
-              <p>Звоните:</p>
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <div class="feedback__wrapper">
+          <h3 class="feedback__title">Остались вопросы? Свяжитесь с нами!</h3>
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <p class="feedback__excerpt">Звоните:</p>
+              <a class="feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
-            <li class="Feedback__item">
-              <p>Пишите:</p>
-              <a href="https://htmlacademy.ru/email">mail@htmlacademy.ru</a>
+            <li class="feedback__item">
+              <p class="feedback__excerpt">Пишите:</p>
+              <a class="feedback__link" href="https://htmlacademy.ru/email">mail@htmlacademy.ru</a>
             </li>
-            <li class="Feedback__item">
-              <p>Приезжайте в гости: <br>
+            <li class="feedback__item">
+              <p class="feedback__excerpt">Приезжайте в гости: <br>
                 ул. Большая Конюшенная, 19/8
               </p>
             </li>
@@ -189,27 +190,25 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a href="#" title="логотип-очки">
+          <a class="main-footer__link-logo" href="#" title="логотип-очки">
             <img src="https://via.placeholder.com/59x40" alt="логотип-pink">
           </a>
         </div>
         <ul class="main-footer__list">
           <li class="main-footer__item">
-            <a href="https://twitter.com/?lang=ru" title="Twitter">1</a>
+            <a class="main-footer__link" href="https://twitter.com/?lang=ru" title="Twitter">1</a>
           </li>
           <li class="main-footer__item">
-            <a href="https://ru-ru.facebook.com/" title="Facebook">2</a>
+            <a class="main-footer__link" href="https://ru-ru.facebook.com/" title="Facebook">2</a>
           </li>
           <li class="main-footer__item">
-            <a href="https://www.youtube.com/?gl=RU" title="youtube">3</a>
+            <a class="main-footer__link" href="https://www.youtube.com/?gl=RU" title="youtube">3</a>
           </li>
         </ul>
         <div class="main-footer__link-logo">
           <p>Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive"title="htmlacademy-intensive">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#000000"/>
-            </svg>
+          <a href="https://htmlacademy.ru/intensive/adaptive"title="интенсив академии">
+            <img src="img/logo-academy-footer.png" alt="логотип академии">
           </a>
         </div>
       </div>
