@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page-body">
+
+    <header class="main-header">
+      <h1 class="visually-hidden">конкурс 'лучшая история'</h1>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#" title="логотип">PINK</a>
+        <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
+        <nav class="main-header__navigation">
+          <div class="main-header__navigation-wrapper">
+            <ul class="main-header__list">
+              <li class="main-header__item">
+                <a class="main-header__link" href="index.html">главная</a>
+              </li>
+              <li class="main-header__item">
+                <a class="main-header__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-header__item">
+                <a class="main-header__link" href="#">конкурс</a>
+              </li>
+              <li class="main-header__item">
+                <a class="main-header__link" href="#">html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="contest">
+        <h2 class="visually-hidden">название конкурса</h2>
+        <div class="contest__wrapper">
+          <p class="contest__excerpt">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
+      </section>
+
+      <section class="best-story">
+        <h2 class="visually-hidden">личные данные</h2>
+        <div class="best-story__wrapper">
+          <p class="contest__excerpt">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <form class="best-story__list" action="index.html" method="post">
+            <div class="best-story__item">
+              <label for="familiya">ФАМИЛИЯ:</label>
+              <input type="text" name="familiya" id="familiya" value="Укажите фамилию">
+            </div>
+            <div class="best-story__item">
+              <label for="name">ИМЯ:</label>
+              <input type="text" name="name" id="name" value="Введите ваше имя">
+            </div>
+            <div class="best-story__item">
+              <label for="patronymic">ОТЧЕСТВО:</label>
+              <input type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="travel-achievements">
+        <h2 class="visually-hidden">ваши достижения</h2>
+        <div class="travel-achievements__wrapper">
+          <p class="travel-achievements__excerpt">Ваши безбашенные достижения в путешествии</p>
+          <form class="travel-achievements__list" action="index.html" method="post">
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="selfie" id="selfie" checked>
+              <label for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="beach" id="beach" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="star" id="star">
+              <label for="star">Видел Чака Норриса</label>
+            </div>
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="shopping" id="shopping">
+              <label for="shopping">Накупил сувениров</label>
+            </div>
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="tower" id="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div class="travel-achievements__item">
+              <input type="checkbox" name="hotel" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="Contact-details">
+        <h2 class="visually-hidden">контактные данные</h2>
+        <div class="Contact-details__wrapper">
+          <form class="Contact-details__list" action="index.html" method="post">
+            <div class="Contact-details__item">
+              <label for="phone">НОМЕР ТЕЛЕФОНА</label>
+              <input type="text" name="phone" id="phone" value="Номер, пожалуйста">
+            </div>
+            <div class="Contact-details__item">
+              <label for="mail">АДРЕС ПОЧТЫ</label>
+              <input type="email" name="mail" id="mail" value="Введите почту *">
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="attachment">
+        <h2 class="visually-hidden">выбор приложения</h2>
+        <div class="attachment__wrapper">
+          <p class="attachment__excerpt">С каким приложением путешествовали?</p>
+          <form class="attachment__list" action="index.html" method="post">
+            <div class="attachment__item">
+              <input type="radio" name="ios" id="ios" value="" checked>
+              <label for="ios">Pink для iOS</label>
+            </div>
+            <div class="attachment__item">
+              <input type="radio" name="Android" id="Android" value="">
+              <label for="Android">Pink на Android</label>
+            </div>
+            <div class="attachment__item">
+              <input type="radio" name="Windows" id="Windows" value="">
+              <label for="Windows">Windows Phone</label>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="emotion">
+        <h2 class="visually-hidden">ваши эмоции</h2>
+        <div class="emotion__wrapper">
+          <form class="emotion__list" action="index.html" method="post">
+            <div class="emotion__item">
+              <label for="emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+              <textarea name="emotion" id="emotion" rows="10" cols="50"></textarea>
+            </div>
+          </form>
+          <button type="submit" name="button">Отправить форму</button>
+          <p class="emotion__excerpt">* — обязательные поля</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="main-footer__link-logo" href="#" title="логотип-очки">
+            <img src="https://via.placeholder.com/59x40" alt="логотип-pink">
+          </a>
+        </div>
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="https://twitter.com/?lang=ru" title="Twitter">1</a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="https://ru-ru.facebook.com/" title="Facebook">2</a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="https://www.youtube.com/?gl=RU" title="youtube">3</a>
+          </li>
+        </ul>
+        <div class="main-footer__link-logo">
+          <p>Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" title="интенсив академии">
+            <img src="img/logo-academy-footer.png" alt="логотип академии">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="success-popup">
+      <h2 class="visually-hidden">заявка отправлена</h2>
+      <div class="success-popup__wrapper">
+        <h3 class="success-popup__title">Ваша заявка отправлена</h3>
+        <p class="success-popup__excerpt">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <div class="success-popup__box">
+          <button class="success-popup__button" type="button" name="button">ЗАКРЫТЬ ОКНО</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="failure-popup">
+      <h2 class="visually-hidden">Ошибка</h2>
+      <div class="failure-popup__wrapper">
+        <h3 class="failure-popup__title">Что-то пошло не так!</h3>
+        <p class="failure-popup__excerpt">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="failure-popup__button" type="button" name="button">ОК</button>
+      </div>
+    </section>
+
+  </body>
+</html>
