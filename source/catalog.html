@@ -40,7 +40,7 @@
 
     <section class="panorama">
       <h2 class="visually-hidden">панорама дня</h2>
-      <div class="panorama__wripper">
+      <div class="panorama__wrapper">
         <p class="panorama__excerpt">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="panorama__box">
           <a class="panorama__link" href="#">
@@ -150,50 +150,52 @@
     <section class="publishing-history">
       <h2 class="visually-hidden">опубликуй свою историю</h2>
       <div class="publishing-history__wrapper">
-        <div class="publishing-history__upload-photo">
-          <input class="visually-hidden" type="file" name="upload" id="upload">
-          <label class="publishing-history__upload" for="upload"></label>
-        </div>
-        <div class="publishing-history__photo-correction">
-          <ul class="publishing-history__list">
-            <li class="publishing-history__item">
-              <button type="button">
-                <img src="https://via.placeholder.com/45x45" alt="crop">
-              </button>
-            </li>
-            <li class="publishing-history__item">
-              <button type="button">
-                <img src="https://via.placeholder.com/45x45" alt="fill">
-              </button>
-            </li>
-            <li class="publishing-history__item">
-              <button type="button">
-                <img src="https://via.placeholder.com/45x45" alt="contrast">
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="publishing-history__range-control-1">
-          <div class="publishing-history__skale">
-            <div class="publishing-history__bar"></div>
-          </div>
-          <div class="publishing-history__toggle toggle-position"></div>
-        </div>
-        <div class="publishing-history__range-control-2 visually-hidden">
-          <div class="publishing-history__skale">
-            <div class="publishing-history__bar"></div>
-          </div>
-          <div class="publishing-history__toggle toggle-position"></div>
-        </div>
-        <div class="publishing-history__range-control-3 visually-hidden">
-          <div class="publishing-history__skale">
-            <div class="publishing-history__bar"></div>
-          </div>
-          <div class="publishing-history__toggle toggle-position"></div>
-        </div>
         <form action="https://echo.htmlacademy.ru" class="publishing-history__form">
-          <button class="publishing-history__button" type="submit">Запостить</button>
-          <button class="publishing-history__button" type="reset">Отмена</button>
+          <div class="publishing-history__upload-photo">
+            <input class="visually-hidden" type="file" name="upload" id="upload">
+            <label class="publishing-history__upload" for="upload"></label>
+          </div>
+          <div class="publishing-history__photo-correction">
+            <ul class="publishing-history__list">
+              <li class="publishing-history__item">
+                <button type="button">
+                  <img src="https://via.placeholder.com/45x45" alt="crop">
+                </button>
+              </li>
+              <li class="publishing-history__item">
+                <button type="button">
+                  <img src="https://via.placeholder.com/45x45" alt="fill">
+                </button>
+              </li>
+              <li class="publishing-history__item">
+                <button type="button">
+                  <img src="https://via.placeholder.com/45x45" alt="contrast">
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="publishing-history__range-control-1">
+            <div class="publishing-history__skale">
+              <div class="publishing-history__bar"></div>
+            </div>
+            <div class="publishing-history__toggle toggle-position"></div>
+          </div>
+          <div class="publishing-history__range-control-2 visually-hidden">
+            <div class="publishing-history__skale">
+              <div class="publishing-history__bar"></div>
+            </div>
+            <div class="publishing-history__toggle toggle-position"></div>
+          </div>
+          <div class="publishing-history__range-control-3 visually-hidden">
+            <div class="publishing-history__skale">
+              <div class="publishing-history__bar"></div>
+            </div>
+            <div class="publishing-history__toggle toggle-position"></div>
+          </div>
+          <div class="publishing-history__button">
+            <button class="publishing-history__stylization" type="submit">Запостить</button>
+            <button class="publishing-history__stylization" type="reset">Отмена</button>
+          </div>
         </form>
       </div>
     </section>
