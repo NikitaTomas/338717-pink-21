@@ -1,0 +1,34 @@
+.configurator {
+  background-image: url("../img/configurator-background.png");
+  background-repeat: no-repeat;
+}
+
+.configurator__line td:first-child {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.configurator__line:first-child h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.configurator__line:first-child p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

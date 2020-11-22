@@ -1,0 +1,39 @@
+.advantages {
+  background-color: #FFFFFF;
+}
+
+.advantages__list {
+  background-image: url("../img/advantages-background.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item {
+  list-style: none;
+}
+
+.advantages__excerpt {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #283645;
+}
+
+.advantages__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.advantages__excerpt-item {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}

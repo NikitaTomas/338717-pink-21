@@ -1,0 +1,40 @@
+.motivation {
+  background-image: url("../img/motivation-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: green;
+}
+
+.motivation__download {
+  background-color: #1D2631;
+}
+
+.motivation__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.motivation__excerpt {
+  font-family:"Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.motivation__link-download {
+  font-family:"Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 3px solid #FFFFFF;
+  border-radius: 29px;
+}
