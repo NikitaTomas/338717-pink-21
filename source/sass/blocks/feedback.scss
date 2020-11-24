@@ -1,10 +1,10 @@
 .feedback {
   background-color: #FFFFFF;
-}
 
-.feedback::before {
-  background-image: url("../img/feedback-before-background.png");
-  background-repeat: no-repeat;
+  &::before {
+    background-image: url("../img/feedback-before-background.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .feedback__item {
@@ -12,8 +12,6 @@
 }
 
 .feedback__title {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -21,17 +19,13 @@
 }
 
 .feedback__excerpt {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #283645;
 }
 
 .feedback__link {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

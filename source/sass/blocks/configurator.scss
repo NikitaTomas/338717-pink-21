@@ -4,9 +4,7 @@
 }
 
 .configurator__line td:first-child {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -14,9 +12,7 @@
 }
 
 .configurator__line:first-child h3 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
@@ -24,8 +20,6 @@
 }
 
 .configurator__line:first-child p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
