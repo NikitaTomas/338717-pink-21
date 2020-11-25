@@ -1,0 +1,32 @@
+.failure-popup {
+  width: 320px;
+  height: 289px;
+  background-color: #FFFFFF;
+}
+
+.failure-popup__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.failure-popup__excerpt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+}
+
+.failure-popup__button{
+  width: 276px;
+  height: 59px;
+  background: #2AAB6D;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
