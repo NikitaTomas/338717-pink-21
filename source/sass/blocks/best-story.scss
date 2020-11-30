@@ -1,8 +1,8 @@
-.item-background-1 {
+.best-story__item---white {
   background-color: #ffffff;
 }
 
-.item-background-2 {
+.best-story__item---gray {
   background-color: #f2f2f2;
 }
 
@@ -14,14 +14,15 @@
   color: #283645;
 }
 
-.best-story__item input[placeholder] {
+.best-story__item--input-color {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
 }
 
-.best-story__item textarea[placeholder] {
+.best-story__item--gray-text {
+  border: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -30,39 +31,14 @@
 
 .best-story__item {
   border: none;
-
-  &:nth-child(1) label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #d22856;
-    text-transform: uppercase;
-  }
-
-  &:nth-child(2) label {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
-
-  &:nth-child(3) label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #d22856;
-    text-transform: uppercase;
-  }
-
-  &:nth-child(4) label {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
 }
 
-.best-story__item legend {
+.best-story__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
