@@ -1,0 +1,75 @@
+.panorama {
+  background-color: #ffffff;
+}
+
+.panorama__excerpt--line-height {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.panorama__box {
+  background-color: #f2f2f2;
+}
+
+.panorama__link {
+  text-decoration: none;
+
+  &::before {
+    content: "панорама дня";
+    position: relative;
+    display: block;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
+}
+
+.panorama__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.panorama__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.panorama__excerpt {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.panorama__likes::before {
+  display: block;
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/heart.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.panorama__likes--heart {
+  border: none;
+}
+
+.panorama__likes--likes-number {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
