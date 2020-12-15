@@ -1,33 +1,11 @@
 .advantages {
   margin: 0 auto;
   margin-top: -20px;
-  width: 320px;
+  width: 100%;
   background-color: #ffffff;
   background-image: url("../img/advantages-background.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
-  @media (min-width: 660px) {
-    width: 660px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-
-.advantages__wrapper {
-  width: 320px;
-
-  @media (min-width: 660px) {
-    width: 660px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 920px;
-    margin: 0 auto;
-  }
 }
 
 .advantages__list {
@@ -43,8 +21,8 @@
     margin-right: 50px;
   }
 
-  @media (min-width: 1200px) {
-    width: 920px;
+  @media (min-width: 960px) {
+    width: 960px;
     flex-direction: row;
   }
 }
@@ -59,7 +37,7 @@
   list-style: none;
   text-align: center;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 200px;
   }
 }

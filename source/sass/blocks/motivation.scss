@@ -1,21 +1,14 @@
 .motivation {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   min-height: 743px;
   background-image: url("../img/motivation-background.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
-  @media (min-width: 660px) {
-    width: 660px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
 .motivation__wrapper {
+  width: 320px;
   height: 743px;
   margin-top: -20px;
   display: flex;
@@ -26,8 +19,8 @@
     width: 660px;
   }
 
-  @media (min-width: 1200px) {
-    width: 920px;
+  @media (min-width: 960px) {
+    width: 960px;
     margin: 0 auto;
   }
 }

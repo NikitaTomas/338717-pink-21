@@ -4,12 +4,10 @@
 
 .maps-page__widtch {
   @media (min-width: 600px) {
-    width: 660px;
     height: 374px;
   }
 
-  @media (min-width: 1200px) {
-    width: 1200px;
+  @media (min-width: 960px) {
     height: 502px;
   }
 }
