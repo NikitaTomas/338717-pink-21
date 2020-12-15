@@ -1,0 +1,13 @@
+.maps-page {
+  width: 100%;
+}
+
+.maps-page__widtch {
+  @media (min-width: 600px) {
+    height: 374px;
+  }
+
+  @media (min-width: 960px) {
+    height: 502px;
+  }
+}

@@ -1,0 +1,59 @@
+.effect-24 {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: 660px) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 960px) {
+    display: block;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+}
+
+.effect-24__wrapper {
+  width: 620px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 960px) {
+    width: 960px;
+  }
+}
+
+.effect-24__box {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 960px) {
+    width: 470px;
+  }
+}
+
+.effect-24__title {
+  width: 155px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.effect-24__excerpt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.effect-24__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+}

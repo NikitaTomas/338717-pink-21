@@ -1,9 +1,43 @@
 .configurator {
+  width: 100%;
   background-image: url("../img/configurator-background.png");
   background-repeat: no-repeat;
 }
 
-.configurator__line td:first-child {
+.slider-inner {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
+
+  @media (min-width: 960px) {
+    width: 960px;
+  }
+}
+
+.configurator__slider-list {
+  width: 840px;
+}
+
+.configurator__slider {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.configurator__table {
+  width: 840px;
+  border-collapse: collapse;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
+}
+
+.configurator__column:first-child {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -25,4 +59,20 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.configurator__column {
+  border: 1px solid #000000;
+  border-collapse: separate;
+}
+
+.configurator__column--blue {
+  background-color: #283645;
+  text-align: center;
+}
+
+.configurator__width-1 {
+  width: 276px;
+  height: 59px;
+  background-color: #ffffff;
 }
