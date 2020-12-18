@@ -1,5 +1,4 @@
 .best-story {
-  width: 100%;
   background-color: #ffffff;
 }
 
@@ -14,7 +13,6 @@
 .best-story__excerpt {
   margin: 0 auto;
   margin-top: 30px;
-  width: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -47,7 +45,6 @@
 .best-story__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   @media (min-width: 960px) {
     flex-direction: row;
@@ -57,6 +54,7 @@
 
 
 .best-story__item--input-color {
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -90,6 +88,10 @@
 .best-story__item--tablet-2 {
   @media (min-width: 660px) {
     order: -2;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: auto;
   }
 }
 
