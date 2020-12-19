@@ -2,50 +2,55 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
 
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="#" title="логотип">PINK</a>
-        <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
+      <div class="main-header__wrapper container">
+        <div class="main-header__top">
+          <a class="main-header__logo" href="#" title="логотип">
+            <img src="img/pink.png" alt="логотип">
+          </a>
+          <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
+        </div>
         <nav class="main-header__navigation">
-          <div class="main-header__navigation-wrapper">
-            <ul class="main-header__list">
-              <li class="main-header__item">
-                <a class="main-header__link" href="index.html">главная</a>
-              </li>
-              <li class="main-header__item">
-                <a class="main-header__link" href="catalog.html">Фотографии</a>
-              </li>
-              <li class="main-header__item">
-                <a class="main-header__link" href="#">конкурс</a>
-              </li>
-              <li class="main-header__item">
-                <a class="main-header__link" href="#">html academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link" href="index.html">главная</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">конкурс</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">html academy</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main class="page-main">
+      <h1 class="visually-hidden">конкурс 'лучшая история'</h1>
+
       <section class="contest">
-        <h1 class="visually-hidden">конкурс 'лучшая история'</h1>
         <div class="contest__wrapper">
-          <p class="contest__excerpt">Конкурс на самое <br>безбашенное <br>путешествие с Пинк</p>
+          <p class="contest__excerpt">Конкурс на самое безбашенное путешествие с Пинк</p>
         </div>
       </section>
 
       <section class="best-story">
         <h2 class="visually-hidden">личные данные</h2>
-        <div class="best-story__wrapper">
-          <p class="best-story__excerpt">Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
+        <div class="best-story__wrapper container">
+          <p class="best-story__excerpt">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<b class="best-story__excerpt--hidden">Пожалуйста, заполните форму ниже:</b></p>
           <form class="best-story__list" action="index.html" method="post">
-            <fieldset class="best-story__item best-story__item---white">
+            <fieldset class="best-story__item best-story__item---white best-story__item--tablet-1">
               <div class="best-story__box">
                 <label for="surname">фамилия:</label>
                 <input class="best-story__item--input-color" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
@@ -59,7 +64,7 @@
                 <input class="best-story__item--input-color" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
-            <fieldset class="best-story__item--gray-text best-story__item---gray">
+            <fieldset class="best-story__item--gray-text best-story__item---gray beest-story__item--width-desktop">
               <legend class="best-story__title">Ваши безбашенные достижения в путешествии</legend>
               <div class="best-story__box">
                 <input type="checkbox" name="selfie" id="selfie" checked>
@@ -86,7 +91,7 @@
                 <label for="hotel">Разгромил отель</label>
               </div>
             </fieldset>
-            <fieldset class="best-story__item best-story__item---white">
+            <fieldset class="best-story__item best-story__item---white best-story__item--tablet-3">
               <div class="best-story__box">
                 <label for="phone">номер телефона</label>
                 <input class="best-story__item--input-color" type="number" name="phone" id="phone" placeholder="Номер, пожалуйста">
@@ -96,7 +101,7 @@
                 <input class="best-story__item--input-color" type="email" name="mail" id="mail" placeholder="Введите почту *">
               </div>
             </fieldset>
-            <fieldset class="best-story__item--gray-text best-story__item---gray">
+            <fieldset class="best-story__item--gray-text best-story__item---gray best-story__item--tablet-2">
               <legend class="best-story__title">С каким приложением путешествовали?</legend>
               <div class="best-story__box">
                 <input type="radio" name="attachment" id="ios" value="iOS" checked>
