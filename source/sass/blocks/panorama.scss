@@ -2,30 +2,99 @@
   background-color: #ffffff;
 }
 
+.panorama__wrapper {
+  width: 100%;
+  outline: 3px solid red;
+}
+
 .panorama__excerpt--line-height {
+  margin: 0 auto;
+  width: 240px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+  outline: 1px solid green;
+
+  @media (min-width: 660px) {
+    margin-top: 50px;
+    width: 530px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 960px) {
+    width: 580px;
+  }
 }
 
-.panorama__box {
+.panorama__box-top {
+  padding-top: 54px;
+  min-height: 100px;
+
+  @media (min-width: 660px) {
+    min-height: 170px;
+  }
+
+  @media (min-width: 960px) {
+    min-height: 200px;
+  }
+}
+
+.panorama__box-bottom {
+  margin: auto;
+  padding-left: 15px;
+  width: 280px;
   background-color: #f2f2f2;
+  outline: 1px solid blue;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    min-height: 121px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 70px 70px;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.panorama__box-name {
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .panorama__link {
+  display: block;
   text-decoration: none;
 
   &::before {
     content: "панорама дня";
-    position: relative;
+    position: absolute;
     display: block;
+    padding-left: 10px;
     width: 140px;
     height: 36px;
+    right: 0;
     background-color: #d22856;
     color: #ffffff;
     line-height: 35px;
     text-transform: uppercase;
+  }
+}
+
+.panorama__img {
+  width: 100%;
+
+  @media (min-width: 660px) {
+    height: 660px;
+  }
+
+  @media (min-width: 960px) {
+    height: 506px;
   }
 }
 
@@ -34,6 +103,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  outline: 1px solid red;
 }
 
 .panorama__time {
@@ -42,28 +112,38 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #283645;
+  outline: 1px solid red;
 }
 
 .panorama__excerpt {
+  margin-bottom: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  outline: 1px solid red;
 }
 
-.panorama__likes::before {
+.panorama__likes--heart::before {
   display: block;
   content: "";
   position: relative;
   width: 15px;
   height: 15px;
+  right: 15px;
+  top: 20px;
   background-image: url("../img/heart.png");
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .panorama__likes--heart {
+  width: 100px;
+  margin-bottom: 10px;
   border: none;
+  outline: 1px solid red;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 .panorama__likes--likes-number {

@@ -2,8 +2,24 @@
   background-color: #ffffff;
 }
 
-.gallery-of-reviews__item {
+.gallery-of-reviews__list {
   list-style: none;
+  outline: 3px solid blue;
+
+  @media (min-width: 660px) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 300px 300px;
+  }
+
+  @media (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+.gallery-of-reviews__item {
+  width: 280px;
 }
 
 .gallery-of-reviews__news-stats {
@@ -56,9 +72,17 @@
 }
 
 .gallery-of-reviews__excerpt-challenge {
+  margin: auto;
+  width: 270px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
+  outline: 2px solid black;
+
+  @media (min-width: 660px) {
+    width: 430px;
+    font-size: 18px;
+  }
 }

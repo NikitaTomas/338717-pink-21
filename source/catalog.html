@@ -2,31 +2,35 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html" title="логотип">PINK</a>
-      <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
+    <div class="main-header__wrapper container">
+      <div class="main-header__top">
+        <a class="main-header__logo" href="#" title="логотип">
+          <img src="img/pink.png" alt="логотип">
+        </a>
+        <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
+      </div>
       <nav class="main-header__navigation">
-        <div class="main-header__navigation-wrapper">
-          <ul class="main-header__list">
-            <li class="main-header__item">
-              <a class="main-header__link" href="index.html">главная</a>
-            </li>
-            <li class="main-header__item">
-              <a class="main-header__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-header__item">
-              <a class="main-header__link" href="#">конкурс</a>
-            </li>
-            <li class="main-header__item">
-              <a class="main-header__link" href="#">html academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-header__link" href="index.html">главная</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">конкурс</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">html academy</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -35,26 +39,26 @@
     <h1 class="visually-hidden">фотогалерея</h1>
     <section class="contest">
       <div class="contest__wrapper">
-        <h2 class="contest__excerpt">Фотографии пользователей</h2>
+        <h2 class="contest__excerpt">Фотографии <br>пользователей</h2>
       </div>
     </section>
 
     <section class="panorama">
       <h2 class="visually-hidden">панорама дня</h2>
       <div class="panorama__wrapper">
-        <p class="panorama__excerpt--line-height">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="panorama__box">
-          <a class="panorama__link" href="#">
-            <img src="img/panorama-tablet-mobile.jpg" alt="панорама дня">
-          </a>
-          <div class="panorama__news-stats">
+        <div class="panorama__box-top">
+          <p class="panorama__excerpt--line-height">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <a class="panorama__link" href="#">
+          <img class="panorama__img" src="img/panorama-tablet-mobile.jpg" alt="панорама дня">
+        </a>
+        <div class="panorama__box-bottom">
+          <div class="panorama__box-name">
             <b class="panorama__name">Анна</b>
             <time class="panorama__time" datetime="2020-11-17">(5 минут назад)</time>
-            <p class="panorama__excerpt">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           </div>
-          <div class="panorama__likes">
-            <button class="panorama__likes--heart" type="button"><span class="panorama__likes--likes-number">Нравится: 215</span></button>
-          </div>
+          <p class="panorama__excerpt">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <a class="panorama__likes--heart" type="button"><span class="panorama__likes--likes-number">Нравится: 215</span></a>
         </div>
       </div>
     </section>
@@ -62,7 +66,7 @@
     <section class="gallery-of-reviews">
       <h2 class="visually-hidden">фотоотчеты о приключениях</h2>
       <div class="gallery-of-reviews__wrapper">
-        <ul class="gallery-of-reviews__list">
+        <ul class="gallery-of-reviews__list container">
           <li class="gallery-of-reviews__item">
             <a class="gallery-of-reviews__link" href="#">
               <img src="img/photo-1-mobile.jpg" alt="панорама дня">
@@ -142,19 +146,19 @@
             </div>
           </li>
         </ul>
-        <div class="gallery-of-reviews__challenge">
-          <p class="gallery-of-reviews__excerpt-challenge">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
-        </div>
+        <p class="gallery-of-reviews__excerpt-challenge">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </section>
 
     <section class="publishing-history">
       <h2 class="visually-hidden">опубликуй свою историю</h2>
-      <div class="publishing-history__wrapper">
+      <div class="publishing-history__wrapper container">
         <form action="https://echo.htmlacademy.ru" class="publishing-history__form">
           <div class="publishing-history__upload-photo">
             <input class="visually-hidden" type="file" name="upload" id="upload">
-            <label class="publishing-history__upload" for="upload"></label>
+            <label class="publishing-history__upload" for="upload">
+              <img src="https://via.placeholder.com/284x374" alt="">
+            </label>
           </div>
           <div class="publishing-history__photo-correction">
             <ul class="publishing-history__list">
@@ -174,28 +178,28 @@
                 </button>
               </li>
             </ul>
-          </div>
-          <div class="publishing-history__range-control-1">
-            <div class="publishing-history__skale">
-              <div class="publishing-history__bar"></div>
+            <div class="publishing-history__range-control-1 publishing-history__control">
+              <div class="publishing-history__skale">
+                <div class="publishing-history__bar">1</div>
+              </div>
+              <div class="publishing-history__toggle toggle-position"></div>
             </div>
-            <div class="publishing-history__toggle toggle-position"></div>
-          </div>
-          <div class="publishing-history__range-control-2 visually-hidden">
-            <div class="publishing-history__skale">
-              <div class="publishing-history__bar"></div>
+            <div class="publishing-history__range-control-2 publishing-history__control">
+              <div class="publishing-history__skale">
+                <div class="publishing-history__bar">2</div>
+              </div>
+              <div class="publishing-history__toggle toggle-position"></div>
             </div>
-            <div class="publishing-history__toggle toggle-position"></div>
-          </div>
-          <div class="publishing-history__range-control-3 visually-hidden">
-            <div class="publishing-history__skale">
-              <div class="publishing-history__bar"></div>
+            <div class="publishing-history__range-control-3 publishing-history__control">
+              <div class="publishing-history__skale">
+                <div class="publishing-history__bar">3</div>
+              </div>
+              <div class="publishing-history__toggle toggle-position"></div>
             </div>
-            <div class="publishing-history__toggle toggle-position"></div>
-          </div>
-          <div class="publishing-history__button">
-            <button class="publishing-history__stylization" type="submit">Запостить</button>
-            <button class="publishing-history__stylization" type="reset">Отмена</button>
+            <div class="publishing-history__button">
+              <button class="publishing-history__stylization" type="submit">Запостить</button>
+              <button class="publishing-history__stylization" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </div>
