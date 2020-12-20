@@ -30,14 +30,14 @@
 
 .panorama__box-top {
   padding-top: 54px;
-  height: 100px;
+  min-height: 100px;
 
   @media (min-width: 660px) {
-    height: 170px;
+    min-height: 170px;
   }
 
   @media (min-width: 960px) {
-    height: 200px;
+    min-height: 200px;
   }
 }
 
@@ -50,6 +50,10 @@
 
   @media (min-width: 660px) {
     width: 620px;
+    min-height: 121px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 70px 70px;
   }
 
   @media (min-width: 960px) {
@@ -57,31 +61,28 @@
   }
 }
 
+.panorama__box-name {
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 .panorama__link {
+  display: block;
   text-decoration: none;
 
   &::before {
     content: "панорама дня";
-    position: relative;
+    position: absolute;
     display: block;
     padding-left: 10px;
     width: 140px;
     height: 36px;
-    top: 36px;
-    left: 180px;
+    right: 0;
     background-color: #d22856;
     color: #ffffff;
     line-height: 35px;
     text-transform: uppercase;
-
-    @media (min-width: 660px) {
-      left: 500px;
-      top: 80px;
-    }
-
-    @media (min-width: 960px) {
-      left: 750px;
-    }
   }
 }
 
@@ -129,7 +130,7 @@
   position: relative;
   width: 15px;
   height: 15px;
-  right: 20px;
+  right: 15px;
   top: 20px;
   background-image: url("../img/heart.png");
   background-repeat: no-repeat;
@@ -137,21 +138,12 @@
 }
 
 .panorama__likes--heart {
+  width: 100px;
   margin-bottom: 10px;
   border: none;
   outline: 1px solid red;
-
-  @media (min-width: 660px) {
-    position: relative;
-    bottom: 100px;
-    left: 500px;
-  }
-
-  @media (min-width: 960px) {
-    position: relative;
-    bottom: 80px;
-    left: 750px;
-  }
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 .panorama__likes--likes-number {
