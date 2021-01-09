@@ -8,7 +8,7 @@
 .main-footer__wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 172px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -16,6 +16,7 @@
   @media (min-width: 660px) {
     width: 620px;
     flex-direction: row;
+    align-items: baseline;
   }
 
   @media (min-width: 960px) {
@@ -27,16 +28,31 @@
 .main-footer__logo {
   display: flex;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .main-footer__list {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+}
+
+.main-footer__item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
 }
 
 .main-footer__link-logo {
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: 660px) {
+    margin-top: 10px;
+  }
 }

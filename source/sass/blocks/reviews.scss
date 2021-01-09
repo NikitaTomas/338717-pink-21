@@ -34,6 +34,18 @@
   @media (min-width: 660px) {
     order: -1;
   }
+
+  @media (min-width: 960px) {
+    &::before {
+      margin: auto;
+      display: block;
+      content: "";
+      width: 80px;
+      height: 70px;
+      background-image: url("../img/quotes.png");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .reviews__item {

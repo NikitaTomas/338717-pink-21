@@ -1,13 +1,13 @@
-.maps-page {
-  width: 100%;
-}
-
 .maps-page__widtch {
+  width: 100%;
+
   @media (min-width: 660px) {
-    height: 374px;
+    min-height: 374px;
+    width: 100%;
   }
 
   @media (min-width: 960px) {
     height: 502px;
+    width: 100%;
   }
 }

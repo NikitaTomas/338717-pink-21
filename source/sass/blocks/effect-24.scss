@@ -9,7 +9,6 @@
   }
 
   @media (min-width: 960px) {
-    display: block;
     margin: 0 auto;
     background-color: #f2f2f2;
   }
@@ -19,10 +18,24 @@
   width: 620px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (min-width: 960px) {
     width: 960px;
+  }
+}
+
+.effect-24__img {
+  display: block;
+  width: 240px;
+  height: 280px;
+  background-image: url("../img/stopwatch.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: 960px) {
+    background-image: url("../img/stopwatch-desktop.png");
+    width: 300px;
+    height: 350px;
   }
 }
 

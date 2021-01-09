@@ -10,11 +10,9 @@
   <body class="page-body">
 
     <header class="main-header">
-      <div class="main-header__wrapper container">
+      <div class="main-header__wrapper">
         <div class="main-header__top">
-          <a class="main-header__logo" href="#" title="логотип">
-            <img src="img/pink.png" alt="логотип">
-          </a>
+          <a class="main-header__logo" href="#" title="логотип"></a>
           <button class="main-header__toggle" type="button" title="открытие меню">Х</button>
         </div>
         <nav class="main-header__navigation">
@@ -72,27 +70,29 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">предложения</h2>
-        <div class="advantages__wrapper container">
+        <div class="advantages__wrapper advantages__list--background container">
           <div class="advantages__excerpt-box">
             <p class="advantages__excerpt">Устали от серости мегаполиса?</p>
             <p class="advantages__excerpt advantages__excerpt--width">Нам есть, что вам предложить!</p>
           </div>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__excerpt-item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__excerpt-item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__excerpt-item"> Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
-            </li>
-          </ul>
+          <div class="advantages__box-flex">
+            <div class="advantages__box-img"></div>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--img-1">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__excerpt-item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item advantages__item--img-2">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__excerpt-item">Сделайте снимок и <br> украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item advantages__item--img-3">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__excerpt-item"> Ставьте лайки,<br> комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
+              </li>
+            </ul>
+          </div>
           <div class="advantages__item advantages__item--none">
-            <img class="advantages__phone-img" src="img/iphone-3.png" alt="">
           </div>
         </div>
       </section>
@@ -100,7 +100,7 @@
       <section class="effect-24">
         <h2 class="visually-hidden">эффект</h2>
         <div class="effect-24__wrapper">
-          <img src="img/stopwatch.png" alt="">
+          <div class="effect-24__img"></div>
           <div class="effect-24__box">
             <h3 class="effect-24__title">Эффект на 24 часа!</h3>
             <p class="effect-24__excerpt">Британские учёные провели исследования и доказали, что положительный эффект от использования приложениядлится целые сутки!</p>
@@ -190,7 +190,7 @@
             </li>
             <li class="feedback__item">
               <p class="feedback__excerpt">Приезжайте в гости:</p>
-              <a class="feedback__link" href="#">ул. Большая Конюшенная, 19/8</a>
+              <a class="feedback__link" href="#">ул. Большая <br>Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
@@ -213,13 +213,19 @@
         </div>
         <ul class="main-footer__list">
           <li class="main-footer__item">
-            <a class="main-footer__link" href="https://twitter.com/?lang=ru" title="Twitter">1</a>
+            <a class="main-footer__link" href="https://twitter.com/?lang=ru" title="Twitter">
+              <img class="main-footer__link-img" src="img/twitter-footer-link.png" alt="">
+            </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link" href="https://ru-ru.facebook.com/" title="Facebook">2</a>
+            <a class="main-footer__link" href="https://ru-ru.facebook.com/" title="Facebook">
+              <img src="img/facebook-footer-link.png" alt="">
+            </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link" href="https://www.youtube.com/?gl=RU" title="youtube">3</a>
+            <a class="main-footer__link" href="https://www.youtube.com/?gl=RU" title="youtube">
+              <img src="img/youtube-footer-link.png" alt="">
+            </a>
           </li>
         </ul>
         <div class="main-footer__link-logo">

@@ -1,7 +1,6 @@
 .main-header {
   margin: 0 auto;
   width: 100%;
-  background-color: #283645;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -9,46 +8,77 @@
 }
 
 .main-header__wrapper {
-  margin: 0 auto;
-
   @media (min-width: 960px) {
+    padding: 0;
     display: flex;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
 
 .main-header__top {
+  margin: auto;
+  min-height: 69px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 22px;
-  padding-bottom: 10px;
-  height: 15px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  background-color: #283645;
 
   @media (min-width: 660px) {
-    width: 660px;
+    margin: 0;
+    padding-left: 10px;
+    min-width: 60px;
   }
 
   @media (min-width: 960px) {
-    width: 960px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.main-header__logo {
+  margin-top: 23px;
+  display: block;
+  width: 75px;
+  height: 25px;
+  background-image: url("../img/pink.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: 660px) {
+    margin-top: 15px;
+    width: 145px;
+    height: 40px;
+    background-image: url("../img/pink-tablet.png");
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 15px;
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/pink-desktop.png");
   }
 }
 
 .main-header__list {
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: #283645;
 
   @media (min-width: 660px) {
-    width: 660px;
+    min-width: 660px;
   }
 
   @media (min-width: 960px) {
     width: 620px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     box-sizing: border-box;
+    background-color: transparent;
   }
 }
 
@@ -59,10 +89,24 @@
 }
 
 .main-header__item {
-  height: 63px;
+  min-height: 63px;
   list-style: none;
   text-align: center;
   line-height: 3.5;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:not(:first-child) {
+    line-height: 3.7;
+  }
+
+  &:last-child {
+    line-height: 3.5;
+    background-color: #283645;
+
+    @media (min-width: 960px) {
+      background-color: transparent;
+    }
+  }
 
   @media (min-width: 960px) {
     box-shadow: none;
@@ -70,6 +114,10 @@
 }
 
 .main-header__toggle {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 25px;
+
   @media (min-width: 960px) {
     display: none;
   }

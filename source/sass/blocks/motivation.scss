@@ -1,10 +1,14 @@
 .motivation {
   margin: 0 auto;
+  margin-top: -63px;
   width: 100%;
-  min-height: 743px;
   background-image: url("../img/motivation-background.png");
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @media (min-width: 960px) {
+    margin-top: -90px;
+  }
 }
 
 .motivation__wrapper {
@@ -38,22 +42,22 @@
 }
 
 .motivation__download-bottom {
-  margin-top: -20px;
+  margin-top: -25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 271px;
+  height: 268px;
   background-color: #1d2631;
 
   @media (min-width: 660px) {
     opacity: 1;
     position: relative;
     bottom: 250px;
+    background: transparent;
   }
 }
 
 .motivation__title {
-  margin-top: 29px;
+  margin-top: 85px;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
@@ -62,9 +66,38 @@
   line-height: 120%;
   color: #ffffff;
   text-align: center;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 320px;
+    height: 286px;
+    left: 0;
+    top: 438px;
+    position: absolute;
+    background-image: url("../img/brush-mobile.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: 660px) {
+      width: 660px;
+      height: 545px;
+      right: 120px;
+      top: 462px;
+      background-image: url("../img/brush-tablet.png");
+    }
+
+    @media (min-width: 960px) {
+      width: 1050px;
+      height: 645px;
+      right: 120px;
+      top: 90px;
+      background-image: url("../img/brush-desktop.png");
+    }
+  }
 }
 
 .motivation__excerpt {
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   width: 270px;
@@ -76,7 +109,8 @@
 }
 
 .motivation__link-download {
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 265px;
@@ -93,11 +127,18 @@
 
 .motivation__list {
   padding: 0;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 13px;
   width: 204px;
-  margin-top: 100px;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+
+.motivation__item {
+  &:first-child {
+    align-self: flex-end;
+  }
 }
