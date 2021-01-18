@@ -14,6 +14,7 @@
 .motivation__wrapper {
   width: 320px;
   height: 743px;
+  margin: auto;
   margin-top: -20px;
   display: flex;
   flex-direction: column;
@@ -72,13 +73,14 @@
     content: "";
     width: 320px;
     height: 286px;
-    left: 0;
-    top: 438px;
-    position: absolute;
+    left: -30px;
+    bottom: -33px;
+    position: relative;
     background-image: url("../img/brush-mobile.png");
     background-repeat: no-repeat;
 
     @media (min-width: 660px) {
+      position: absolute;
       width: 660px;
       height: 545px;
       right: 120px;

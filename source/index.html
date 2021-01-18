@@ -131,41 +131,101 @@
 
       <section class="configurator">
         <h2 class="visually-hidden">конфигуратор</h2>
-        <div class="configurator__wrapper container slider-inner">
-          <table class="configurator__table configurator__slider-list">
-            <tr class="configurator__line">
-              <td class="configurator__column"></td>
-              <td class="configurator__column configurator__column--blue">
-                <h3>База</h3>
-                <p>1,99 USD</p>
+        <div class="price__slider container">
+          <table class="configurator-price price__table">
+
+            <tr>
+              <th class="configurator-price__header">
+              </th>
+              <th class="configurator-price__header">
+                <span class="configurator-price__license-type">База</span>
+                <span class="configurator-price__license-price">1,99 USD</span>
+              </th>
+              <th class="configurator-price__header configurator-price__header--hit" data-hit-text="Хит">
+                <span class="configurator-price__license-type">Стандарт</span>
+                <span class="configurator-price__license-price">3,99 USD</span>
+              </th>
+              <th class="configurator-price__header">
+                <span class="configurator-price__license-type">Анлим</span>
+                <span class="configurator-price__license-price">9,99 USD</span>
+              </th>
+            </tr>
+
+            <tr>
+              <td class="configurator-price__cell">Розовый фильтр</td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Розовый фильтр">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
               </td>
-              <td class="configurator__column configurator__column--blue">
-                <h3>Стандарт</h3>
-                <p>3,99 USD</p>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Розовый фильтр">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
               </td>
-              <td class="configurator__column configurator__column--blue">
-                <h3>Анлим</h3>
-                <p>9,99 USD</p>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Розовый фильтр">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
               </td>
             </tr>
-            <tr class="configurator__line">
-              <td class="configurator__column configurator__width-1">Розовый фильтр</td>
-              <td class="configurator__column configurator__width-1">1</td>
-              <td class="configurator__column configurator__width-1">1</td>
-              <td class="configurator__column configurator__width-1">1</td>
+
+            <tr>
+              <td class="configurator-price__cell">Смайлики</td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Смайлики">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Смайлики">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Смайлики">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
             </tr>
-            <tr class="configurator__line">
-              <td class="configurator__column configurator__width-1">Смайлики</td>
-              <td class="configurator__column configurator__width-1">2</td>
-              <td class="configurator__column configurator__width-1">2</td>
-              <td class="configurator__column configurator__width-1">2</td>
+
+            <tr>
+              <td class="configurator-price__cell">Комментарии</td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Комментарии">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Комментарии">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="configurator-price__cell">
+                <div class="configurator-price__feature" data-feature-name="Комментарии">
+                  <span class="configurator-price__feature-value configurator-price__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
             </tr>
-            <tr class="configurator__line">
-              <td class="configurator__column configurator__width-1">Комментарии</td>
-              <td class="configurator__column configurator__width-1">3</td>
-              <td class="configurator__column configurator__width-1">3</td>
-              <td class="configurator__column configurator__width-1">3</td>
-            </tr>
+
           </table>
         </div>
         <div class="configurator__slider">
